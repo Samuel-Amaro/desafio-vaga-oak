@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Oak</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cadastro e Listagem de Produtos</h1>
+    </header>
+    <main>
+      <form
+        action="#"
+        class="form"
+        name="form-produtos"
+        aria-label="Formulario de Cadastro de Produtos"
+        method="post"
+      >
+        <fieldset class="fieldset-prod">
+          <legend>Produto</legend>
+          <div class="form__group">
+            <label for="nome-produto" class="label">Nome do produto</label>
+            <input
+              type="text"
+              class="input input__text"
+              name="nomeProduto"
+              id="nome-produto"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label for="description-produto" class="label"
+              >Descrição do Produto</label
+            >
+            <input
+              type="text"
+              class="input input__text"
+              name="descricaoProduto"
+              id="description-produto"
+            />
+          </div>
+          <div class="form__group">
+            <label for="valor-produto" class="label">Valor do produto</label>
+            <input
+              type="number"
+              class="input input__number"
+              name="valorProduto"
+              id="valor-produto"
+              step="0.001"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <div id="description-label">
+              Disponivel para venda:
+              <label for="sim"
+                >Sim<input
+                  type="radio"
+                  id="sim"
+                  name="disponibilidadeProduto"
+                  value="Sim"
+                  class="input input__radio"
+              /></label>
+              <label for="nao"
+                >Não<input
+                  type="radio"
+                  id="nao"
+                  name="disponibilidadeProduto"
+                  value="Não"
+                  class="input input__radio"
+              /></label>
+            </div>
+          </div>
+          <div class="form__group">
+            <button
+              type="submit"
+              class="button button__cadastrar"
+              value="Cadastrar"
+              aria-label="Botão cadastrar produto"
+            >
+              Cadastrar
+            </button>
+          </div>
+        </fieldset>
+      </form>
+      
+    </main>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
